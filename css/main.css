@@ -34,7 +34,7 @@
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-height: 3000px;
+    min-height: 100%;
     min-width: 997px;
     margin: 0 auto;
     overflow: hidden;
