@@ -36,11 +36,13 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-width: 997px;
+    min-width: 1087px;
+    margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
     z-index: 1;
     font-family: 'PT Sans', sans-serif;
+    padding: 0 45px;
 }
 .site:after {
     content: '';
@@ -64,7 +66,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .site__header {
     position: relative;
-    min-width: 997px;
     height: 182px;
     margin: 0 auto;
     background: #fff;
@@ -170,10 +171,10 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .site__footer-wrap{
     background: #efefef;
+    padding: 0 45px;
 }
 .site__footer-layout {
     position: relative;
-    min-width: 997px;
     height: 207px;
     margin: 0 auto;
 }
@@ -560,6 +561,7 @@ a.btn_buy{
     width: 100%;
     height: 35px;
     background: url("../img/border-menu.png") no-repeat center;
+    background-size: contain;
 }
 .site__footer .header__menu{
    position: relative;
@@ -934,6 +936,7 @@ a.btn_buy{
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 360px;
     margin: 0 auto;
@@ -1051,9 +1054,10 @@ a.btn_buy{
     text-align: left;
 }
 .reviews__wrap{
+    height: 250px;
     border: 1px solid #ebeae9;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 .reviews__layout{
     padding: 22px 67px;
@@ -1107,7 +1111,7 @@ a.reviews__all{
     position: relative;
     border: 1px solid #ebeae9;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     padding: 33px 10px 10px;
 }
 .why-we:before{
@@ -1176,7 +1180,110 @@ a.reviews__all{
 }
 /* --------------- /why-we --------------- */
 
+/* --------------- news-articles --------------- */
+.tabs {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+.tabs__controls-wrap div {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    margin-bottom: 37px;
+}
+.tabs__controls-wrap div:hover span{
+    text-decoration: none;
+}
+.tabs__controls-wrap div.active span {
+    background: #ededed;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.tabs__controls-wrap div span {
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    padding: 11px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s ease, background 0.3s ease;
+    transition: color 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tabs__wrapper {
+    max-width: 1226px;
+    margin: 0 auto;
+}
+.news-articles{
+    margin-bottom: 30px;
+}
+.site__content-wrap .news-articles__show ul{
+    text-align: justify;
+    margin-bottom: 2px;
+}
+.news-articles__show ul:after{
+    display: inline-block;
+    width: 100%;
+    content: "";
+}
+.news-articles__show ul li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 28%;
+    text-align: left;
+}
+.news-articles__show ul li:before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -73px;
+    width: 29px;
+    height: 123px;
+    background: url("../img/news-articles-line.png")no-repeat center;
+}
+.news-articles__show ul li:first-child:before{
+    display: none;
+}
+.news-articles__show ul li:first-child{
+    width: 23%;
+}
+.news-articles__show ul li:last-child{
+    width: 19%;
+}
+.news-articles__show ul li time{
+    display: block;
+    font-size: 12px;
+    color: #6b6b6b;
+    margin-bottom: 8px;
+}
+.news-articles__show ul li a{
+    font-size: 16px;
+    color: #454545;
+    line-height: 23px;
+}
+.news-articles__show ul li a:hover{
+    text-decoration: none;
+}
+/* --------------- /news-articles --------------- */
+
 @media (min-width: 1600px) {
+    .site {
+        max-width: 1690px;
+        padding: 0 45px;
+    }
+    .site__content-wrap {
+        width: 79%;
+    }
     .site__footer-layout {
         max-width: 1600px;
     }
