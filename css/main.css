@@ -34,7 +34,7 @@
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-height: 100%;
+    min-height: 10%;
     min-width: 997px;
     margin: 0 auto;
     overflow: hidden;
@@ -51,6 +51,7 @@
 .site__content {
     position: relative;
     z-index: 2;
+    margin-left: 20px;
 }
 .site__header {
     position: relative;
@@ -134,6 +135,183 @@
     top: 0;
     border: 20px solid transparent;
     border-left: 20px solid #fff;
+}
+.site__content-wrap{
+    color: #454545;
+}
+.site__content-wrap h1{
+    font-size: 24px;
+    width: 600px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.site__content-wrap p{
+    font-size: 14px;
+    margin-bottom: 25px;
+    letter-spacing: -0.2px;
+    line-height: 18px;
+}
+.site__content-wrap h2{
+    font-size: 18px;
+    font-weight: 700;
+    width: 614px;
+    margin-bottom: 10px;
+}
+.site__content-wrap h3{
+    font-size: 15px;
+    color: #0096a7;
+    margin-bottom: 20px;
+}
+.site__content-wrap h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 9px;
+    letter-spacing: 0.5px;
+}
+.site__content-wrap h4{
+    font-size: 14px;
+    font-weight: 700;
+    width: 580px;
+    line-height: 18px;
+    margin-bottom: 7px;
+}
+.site__content-wrap>ul>li{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+.site__content-wrap ul{
+    margin-top: 13px;
+    margin-bottom: 23px;
+}
+.site__content-wrap ul>li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 12px;
+    background: url("../img/check.png");
+    left: 0;
+    top: 0px;
+    background-repeat: no-repeat;
+}
+.site__content-wrap ol{
+    counter-reset: li;
+    list-style: none;
+    margin-bottom: 25px;
+}
+.site__content-wrap ol>li{
+    position: relative;
+    padding-left: 14px;
+    line-height: 25px;
+}
+.site__content-wrap  .list-strong li .callback{
+    margin-left: -13px;
+}
+.site__content-wrap ol>li li{
+    line-height: 17px;
+    padding-left: 47px;
+    margin-bottom: 12px;
+}
+.site__content-wrap ol>li ol{
+    margin-top: 8px;
+    margin-bottom: 13px;
+
+}
+.site__content-wrap ol li:before{
+    counter-increment: li;
+    content: counters(li,".") "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -16px;
+    padding: 0 12px;
+    color: #221f1f;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    border: 1px solid #0096a7;
+    border-radius: 3px;
+}
+.site__content-wrap ol li li:before{
+    margin-right: 7px;
+}
+
+.site__content-wrap ol>li {
+    position: relative;
+    padding-left: 46px;
+    line-height: 19px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+}
+.site__content-wrap a{
+    color: #0096a7;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.site__content-wrap a:hover{
+    color: #59787b;
+}
+.site__content-wrap .span1{
+    color: #e45526;
+    font-weight: 700;
+}
+.site__content-wrap .span2{
+    color: #0096a7;
+    font-weight: 700;
+}
+.site__content-wrap table{
+    position: relative;
+    display: block;
+    width: 700px;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.site__content-wrap table tr:first-child{
+    background: #f1f1f1;
+}
+.site__content-wrap table tr:nth-child(even){
+
+}
+.site__content-wrap table tr:nth-child(odd){
+    background: #f9f9f9;
+}
+.site__content-wrap table tr:first-child th{
+    padding: 16px 0 12px;
+}
+.site__content-wrap table tr  th{
+    background: #f1f1f1;
+}
+.site__content-wrap table tr td:first-child, .site__content-wrap table tr th:first-child{
+    width: 252px;
+    text-align: left;
+    padding-left: 12px;
+}
+.site__content-wrap table th{
+    font-size: 14px;
+    text-align: center;
+    width: 150px;
+    padding: 16px 0 12px;
+}
+.site__content-wrap table td{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    padding: 9px 0 7px;
+}
+.site__content-wrap .table-cheack{
+    position: absolute;
+    background: url("../img/check.png");
+    width: 16px;
+    margin-left: -8px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
 }
 /* --------------- /site --------------- */
 
