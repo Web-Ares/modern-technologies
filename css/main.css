@@ -50,6 +50,7 @@
 .site__content {
     position: relative;
     z-index: 2;
+    margin-left: 20px;
 }
 .site__header {
     position: relative;
@@ -75,6 +76,28 @@
 }
 .site__content-wrap{
     width: 680px;
+    height: 400px;
+}
+.site__title{
+    position: relative;
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    height: 40px;
+    padding-left: 33px;
+    background: #f0f0f0;
+    padding-top: 8px;
+    margin-bottom: 27px;
+    letter-spacing: 1.3px;
+}
+.site__title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid #fff;
 }
 /* --------------- /site --------------- */
 
@@ -85,3 +108,98 @@
     left: 0;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- breadcrumps --------------- */
+.breadcrumps {
+    padding: 27px 2px 22px;
+    font-size: 12px;
+    color: #e24200;
+}
+.breadcrumps a{
+    position: relative;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: underline;
+}
+.breadcrumps a:hover{
+    text-decoration: none;
+}
+.breadcrumps a:after{
+    content: '→';
+    position: absolute;
+    left: 100%;
+    top: 2px;
+    margin-left: 2px;
+}
+/* --------------- /breadcrumps --------------- */
+
+/* --------------- news --------------- */
+.news{
+    position: relative;
+    display: inline-block;
+    width: 330px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-bottom: 47px;
+    color: #000;
+
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+.news:hover:before{
+    opacity: 1;
+}
+.news:hover .news-title{
+    color: #e35424;
+}
+.news:before{
+    content: '';
+    position: absolute;
+    opacity: 0;
+    background: #f4f4f4;
+    left: -10px;
+    right: -1px;
+    top: -10px;
+    bottom: -10px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.news:nth-child(odd){
+    margin-right: 13px;
+}
+.news>img{
+    position: relative;
+    display: inline-block;
+    width: 111px;
+    height: 111px;
+    margin-right: 11px;
+    z-index: 3;
+}
+.news>div{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    z-index: 3;
+}
+.news>div time{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 11px;
+}
+.news .news-title{
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 14px;
+    height: 68px;
+    overflow: hidden;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+.news p{
+    line-height: 18px;
+}
+/* --------------- /news --------------- */
