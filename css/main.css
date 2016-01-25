@@ -36,8 +36,8 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-height: 100%;
-    min-width: 997px;
+    width: 997px;
+    margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
     z-index: 1;
@@ -218,7 +218,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__content-wrap{
     display: inline-block;
     vertical-align: top;
-    width: 680px;
+    width: 68%;
     height: 400px;
 }
 .site__title{
@@ -344,7 +344,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__content-wrap ol li li:before{
     margin-right: 7px;
 }
-
 .site__content-wrap ol>li {
     position: relative;
     padding-left: 46px;
@@ -511,6 +510,12 @@ a.btn span{
     height: 32px;
     background-position: center;
     margin-right: 10px;
+}
+a.btn_buy{
+    width: 162px;
+    font-size: 18px;
+    padding: 13px 20px;
+    text-align: center;
 }
 /* --------------- /btn --------------- */
 
@@ -811,6 +816,258 @@ a.btn span{
     padding-right: 25px;
 }
 /* --------------- /search --------------- */
+
+/* --------------- slider --------------- */
+.slider {
+    position: relative;
+    margin: 0 auto -12px;
+    overflow: hidden;
+}
+.slider__layout {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+}
+.slider .slider__icon {
+    position: relative;
+    width: 90px;
+    background: #dedede;
+    border-radius: 3px;
+    margin: 0 auto;
+    bottom: 55px;
+    padding: 5px 0 8px;
+    text-align: center;
+}
+.slider__ban {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 360px;
+    left: 50%;
+    margin-left: -410px;
+    z-index: 4;
+    color: #221f1f;
+}
+.ban__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 360px;
+    background: transparent;
+    text-align: left;
+    padding-top: 71px;
+    z-index: 3;
+}
+.ban__item h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 9px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+}
+.ban__item>span {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color:#0096a7;
+    line-height: 19px;
+    margin-bottom: 21px;
+}
+.swiper-pagination-clickable span {
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #c1c1c1;
+    border-radius: 1px;
+    margin: 0 3px !important;
+    opacity: 1;
+    transition: background .3s ease, border .3s ease;
+
+}
+.swiper-pagination-clickable span:hover {
+    background: #fff;
+    border-color:#e24200;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    border-color:#e24200 !important;
+    background: #fff !important;
+}
+.reviews__next,
+.reviews__prev,
+.slider__next,
+.slider__prev{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -51px;
+    width: 27px;
+    height:61px;
+    background: url("../img/slider-next.png") no-repeat;
+    background-size: contain;
+    z-index: 3;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+.reviews__next,
+.reviews__prev{
+    margin-top: -30px;
+}
+.reviews__prev,
+.slider__prev{
+    right: auto;
+    left: 15px;
+    background: url("../img/slider-prev.png") no-repeat;
+    background-size: contain;
+}
+.reviews__next:hover,
+.slider__next:hover{
+    background: url("../img/slider-prev_hover.png") no-repeat;
+    background-size: contain;
+}
+.reviews__prev:hover,
+.slider__prev:hover{
+    background: url("../img/slider-next_hover.png") no-repeat;
+    background-size: contain;
+}
+/* --------------- /slider --------------- */
+
+/* --------------- reviews --------------- */
+.reviews{
+    position: relative;
+    text-align: left;
+}
+.reviews__wrap{
+    border: 1px solid #ebeae9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.reviews__layout{
+    padding: 22px 67px;
+}
+.site__content-wrap .reviews h2{
+    margin-bottom: 15px;
+}
+.reviews__name{
+    display: block;
+    font-size:18px;
+    color:#454545;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.reviews__town{
+    display: block;
+    font-size:14px;
+    color:#a2a2a2;
+    margin-bottom: 10px;
+}
+.reviews p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.reviews__layout>a{
+    display: block;
+    color:#454545;
+    line-height: 21px;
+    margin-bottom: 18px;
+}
+.reviews__layout>p>a{
+    color:#454545;
+}
+.reviews a:hover{
+    text-decoration: none;
+}
+.reviews time{
+    display: block;
+    font-size: 12px;
+    color:#6b6b6b;
+}
+a.reviews__all{
+    font-size:14px;
+    color: #454545;
+}
+/* --------------- /reviews --------------- */
+
+/* --------------- why-we --------------- */
+.why-we{
+    position: relative;
+    border: 1px solid #ebeae9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 33px 10px 10px;
+}
+.why-we:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 92%;
+    height: 13px;
+    background: #dedede;
+    border-radius: 0 3px 0 0;
+}
+.site__content-wrap .why-we h2{
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    color: #e24200;
+    padding-bottom: 14px;
+    margin-bottom: 17px;
+}
+.site__content-wrap .why-we h2:before{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    margin-left: -44%;
+    width: 88%;
+    height: 1px;
+    background: #dedede;
+}
+.why-we ul{
+    margin-left: 15px;
+}
+.why-we ul li{
+    display: inline-block;
+    vertical-align: top;
+    width: 24.5%;
+    text-align: left;
+    padding: 0 10px;
+    margin: 0;
+}
+.why-we ul li div{
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.why-we ul li span{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.why-we ul li span:before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 11px;
+    background: url("../img/why-we-active.png")no-repeat center;
+}
+/* --------------- /why-we --------------- */
 
 @media (min-width: 1600px) {
     .site__footer-layout {
