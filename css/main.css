@@ -36,7 +36,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-width: 1087px;
+    min-width: 1153px;
     margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
@@ -577,9 +577,10 @@ a.btn_buy{
     background-size: contain;
 }
 .site__footer .header__menu{
-   position: relative;
-   padding-top: 24px;
-    padding-bottom: 46px;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 33px;
+    margin-bottom: 11px;
 }
 .site__footer .header__menu:before{
     top: auto;
@@ -1199,7 +1200,7 @@ a.reviews__all{
 .tabs {
     display: block;
     position: relative;
-    height: 292px;
+    height: 218px;
     text-align: left;
 }
 .tabs__controls-wrap div {
