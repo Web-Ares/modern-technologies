@@ -79,7 +79,7 @@
 
         <!--site__title-->
         <span class="site__title">
-            Заявление на регистрацию транспортного средства
+            Договор купли продажи автомобиля по доверенности
         </span>
         <!--/site__title-->
 
@@ -92,86 +92,17 @@
                 <form method="get" action="#">
 
                     <!--applications__item-->
-                    <div class="applications__item">
-                        <fieldset>
-                            <label for="name">ФИО</label>
-                            <input type="text" name="name" id="name"/>
-                        </fieldset>
-                    </div>
-                    <!--/applications__item-->
-
-                    <!--applications__item-->
                     <div class="applications__item agree__item">
-                        <h2>Тип операции</h2>
-                        <fieldset>
-                            <label for="item-reg">Зарегистрировать</label>
-                            <select name="item-reg" id="item-reg">
-                                <option value=" 1">1</option>
-                                <option value=" 2"> 2</option>
-                                <option value="3"> 3</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <label for="item-change">Внести изменения в связи с</label>
-                            <select name="item-change" id="item-change">
-                                <option value=" 1">1</option>
-                                <option value="2">2</option>
-                                <option value=" 3">3</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <label for="item-remove">Снять с регистрационного
-                                учета в связи с</label>
-                            <select name="item-remove" id="item-remove">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <label for="item-stop">Прекратить регистрацию
-                                транспортного средства в связи с</label>
-                            <select name="item-stop" id="item-stop">
-                                <option value="Марка 1">Марка 1</option>
-                                <option value="Марка 2">Марка 2</option>
-                                <option value="Марка 3">Марка 3</option>
-                            </select>
-                        </fieldset>
-                    </div>
-                    <!--/applications__item-->
-
-                    <!--applications__item-->
-                    <div class="applications__item agree__item">
-                        <h2>Сведения о собственнике транспортного средства</h2>
-                        <fieldset class="cheackbox-field">
-                            <label for="name_buyer">Тип</label>
-                            <div class="cheack-section">
-                                <div class="checkbox-select">
-                                    <input type="checkbox" name="name_buyer" value="cheack1" id="physh"/>
-                                </div>
-                                <div class="checkbox-select-label">Физическое лицо</div>
-                                <div class="checkbox-select">
-                                    <input type="checkbox" name="name_buyer" value="cheack2" id="uridic"/>
-                                </div>
-                                <div class="checkbox-select-label">Юридическое лицо</div>
-                            </div>
-
-                        </fieldset>
+                        <h2>Доверенное лицо</h2>
                         <fieldset>
                             <label for="name_buyer">ФИО</label>
                             <input type="text" name="name_buyer" id="name_buyer"/>
                         </fieldset>
-
                         <fieldset>
-                            <label for="birth">Дата рождение
-                                (или регистрации юр. лица)</label>
-                            <input type="text" name="birth" id="birth"/>
-                        </fieldset>
-                        <fieldset>
-                            <label for="number_auto">Паспорт транспортного средства</label>
+                            <label for="owner-pasport">Паспорт</label>
                             <div>
                                 <div>
-                                    <input type="text" name="number"  class="applications__item-serial" id="number_auto"/>
+                                    <input type="text" name="owner-pasport"  class="applications__item-serial" id="owner-pasport"/>
                                     <span>Серия</span>
                                 </div>
                                 <div>
@@ -201,37 +132,169 @@
                                 </div>
                             </div>
                         </fieldset>
-                            <fieldset>
-                                <label for="inn">ИНН</label>
-                                <input type="text" name="inn" id="inn"/>
-                            </fieldset>
-                            <fieldset>
-                                <label for="add_reg">Адрес регистрации</label>
-                                <input type="text" name="add_reg" id="add_reg"/>
-                            </fieldset>
-                            <fieldset>
-                                <label for="phone">Номер телефона</label>
-                                <input type="text" name="phone" id="phone"/>
-                            </fieldset>
-                            <fieldset>
-                                <label for="place">Место рождения</label>
-                                <input type="text" name="place" id="place"/>
-                            </fieldset>
-                        </div>
+                        <fieldset>
+                            <label for="add_reg">Адрес проживания</label>
+                            <input type="text" name="add_reg" id="add_reg"/>
+                        </fieldset>
+                    </div>
                     <!--/applications__item-->
 
                     <!--applications__item-->
                     <div class="applications__item agree__item">
-                        <h2>Представитель собственника</h2>
+                        <h2>Продавец</h2>
                         <fieldset>
-                            <label for="owner_name">ФИО</label>
-                            <input type="text" name="owner_name" id="owner_name"/>
+                            <label for="name_buyer2">ФИО</label>
+                            <input type="text" name="name_buyer2" id="name_buyer2"/>
                         </fieldset>
                         <fieldset>
-                            <label for="owner-pasport">Паспорт</label>
+                            <label for="owner-pasport2">Паспорт</label>
                             <div>
                                 <div>
-                                    <input type="text" name="owner-pasport"  class="applications__item-serial" id="owner-pasport"/>
+                                    <input type="text" name="owner-pasport2"  class="applications__item-serial" id="owner-pasport2"/>
+                                    <span>Серия</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="applications__item-number" name="text_number_auto2"/>
+                                    <span>Номер</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="item-by2">Кем выдан</label>
+                            <input type="text" name="item-by2" id="item-by2"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="day2">Дата выдачи</label>
+                            <div>
+                                <div>
+                                    <input type="text" name="day" class="applications__item-day" id="day2"/>
+                                    <span>День</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="applications__item-month" name="month2"/>
+                                    <span>Месяц</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="applications__item-year" name="year2"/>
+                                    <span>Год</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="add_reg2">Адрес проживания</label>
+                            <input type="text" name="add_reg2" id="add_reg2"/>
+                        </fieldset>
+                    </div>
+                    <!--/applications__item-->
+
+                    <!--applications__item-->
+                    <div class="applications__item agree__item">
+                        <h2>Покупатель</h2>
+                        <fieldset>
+                            <label for="name_buyer3">ФИО</label>
+                            <input type="text" name="name_buyer3" id="name_buyer3"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="owner-pasport3">Паспорт</label>
+                            <div>
+                                <div>
+                                    <input type="text" name="owner-pasport3"  class="applications__item-serial" id="owner-pasport3"/>
+                                    <span>Серия</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="applications__item-number" name="text_number_auto3"/>
+                                    <span>Номер</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="item-by3">Кем выдан</label>
+                            <input type="text" name="item-by3" id="item-by3"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="day3">Дата выдачи</label>
+                            <div>
+                                <div>
+                                    <input type="text" name="day" class="applications__item-day" id="day3"/>
+                                    <span>День</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="applications__item-month" name="month3"/>
+                                    <span>Месяц</span>
+                                </div>
+                                <div>
+                                    <input type="text" class="applications__item-year" name="year3"/>
+                                    <span>Год</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="add_reg3">Адрес проживания</label>
+                            <input type="text" name="add_reg3" id="add_reg3"/>
+                        </fieldset>
+                    </div>
+                    <!--/applications__item-->
+
+                    <!--applications__item-->
+                    <div class="applications__item agree__item">
+                        <h2>Предмет договора</h2>
+                        <fieldset>
+                            <label for="name_agree">Марка автомобиля</label>
+                            <select name="name_agree" id="name_agree">
+                                <option value="Марка 1">Марка 1</option>
+                                <option value="Марка 2">Марка 2</option>
+                                <option value="Марка 3">Марка 3</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="model_agree">Модель автомобиля</label>
+                            <select name="model_agree" id="model_agree">
+                                <option value="Марка 1">Модель 1</option>
+                                <option value="Модель 2">Модель 2</option>
+                                <option value="Модель 3">Модель 3</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="year_agree">Год выпуска</label>
+                            <select name="year_agree" id="year_agree">
+                                <option value="Год выпуска 1">Год выпуска 1</option>
+                                <option value="Год выпуска 2">Год выпуска 2</option>
+                                <option value="Год выпуска 3">Год выпуска 3</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="engine">
+                            <label for="name">Объем двигателя</label>
+                            <div>
+                                <input type="text" name="engine" id="engine" class="applications__item-serial"/> литров
+                            </div>
+
+                        </fieldset>
+                        <fieldset>
+                            <label for="name">Шасси</label>
+                            <input type="text" name="rolling" id="rolling"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="section_agree">Кузов</label>
+                            <select name="section_agree" id="section_agree">
+                                <option value="Год выпуска 1">Тип 1</option>
+                                <option value="Год выпуска 2">Тип 2</option>
+                                <option value="Год выпуска 3">Тип 3</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="color">Цвет</label>
+                            <input type="text" name="color" id="color"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="gos_number">Гос.номер</label>
+                            <input type="text" name="gos_number" id="gos_number"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="number_auto">Паспорт транспортного средства</label>
+                            <div>
+                                <div>
+                                    <input type="text" name="number"  class="applications__item-serial" id="number_auto"/>
                                     <span>Серия</span>
                                 </div>
                                 <div>
@@ -241,54 +304,43 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <label for="owner_item-by">Кем выдан</label>
-                            <input type="text" name="owner_item-by" id="owner_item-by"/>
+                            <label for="date_name">Дата выдачи</label>
+                            <input type="text" name="date_name" id="date_name"/>
                         </fieldset>
                         <fieldset>
-                            <label for="owner_day">Дата выдачи</label>
+                            <label for="by_name">Кем выдан</label>
+                            <input type="text" name="by_name" id="by_name"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="reg_number">Свидетельсвто о регистрации</label>
                             <div>
                                 <div>
-                                    <input type="text" name="owner_day" class="applications__item-day" id="owner_day"/>
-                                    <span>День</span>
+                                    <input type="text" name="reg_number"  class="applications__item-serial" id="reg_number"/>
+                                    <span>Серия</span>
                                 </div>
                                 <div>
-                                    <input type="text" class="applications__item-month" name="owner_month"/>
-                                    <span>Месяц</span>
-                                </div>
-                                <div>
-                                    <input type="text" class="applications__item-year" name="owner_year"/>
-                                    <span>Год</span>
+                                    <input type="text" class="applications__item-number" name="reg_number"/>
+                                    <span>Номер</span>
                                 </div>
                             </div>
                         </fieldset>
                         <fieldset>
-                            <label for="owner_adress">Адрес регистрации</label>
-                            <input type="text" name="owner_adress" id="owner_adress"/>
+                            <label for="date_give">Дата выдачи</label>
+                            <input type="text" name="date_give" id="date_give"/>
                         </fieldset>
                         <fieldset>
-                            <label for="owner_phone">Номер телефона</label>
-                            <input type="text" name="owner_phone" id="owner_phone"/>
+                            <label for="by_name_given">Кем выдан</label>
+                            <input type="text" name="by_name_given" id="by_name_given"/>
                         </fieldset>
-
                         <fieldset>
-                            <label for="owner_birth">Дата рождения</label>
-                            <div class="birth-section">
-                                <div>
-                                    <input type="text" name="owner_birth" class="applications__item-day" id="owner_birth"/>
-                                    <span>День</span>
-                                </div>
-                                <div>
-                                    <input type="text" class="applications__item-month" name="owner_month_birth"/>
-                                    <span>Месяц</span>
-                                </div>
-                                <div>
-                                    <input type="text" class="applications__item-year" name="owner_year_birth"/>
-                                    <span>Год</span>
-                                </div>
+                            <label for="price">Стоимость автомобиля</label>
+                            <div>
+                                <input type="text" class="price" name="price" id="price"/>рублей
                             </div>
                         </fieldset>
                     </div>
                     <!--/applications__item-->
+
 
                 </form>
 

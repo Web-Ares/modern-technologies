@@ -1530,6 +1530,9 @@ a.reviews__all{
     left: 13px;
 }
 .applications__item:last-child fieldset:last-child >div{
+    margin-bottom: 9px;
+}
+.applications__item:last-child fieldset:last-child >.birth-section{
     margin-bottom: 30px;
 }
 .applications__item fieldset>div > .checkbox-select{
