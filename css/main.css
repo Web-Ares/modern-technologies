@@ -1328,6 +1328,9 @@ a.reviews__all{
     margin-bottom: 20px;
     font-size: 14px;
 }
+.applications__item .cheackbox-field{
+    margin-bottom: 20px;
+}
 .applications__item input{
     position: relative;
     display: inline-block;
@@ -1343,6 +1346,7 @@ a.reviews__all{
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
+    width: 208px;
 }
 .applications__item fieldset>div{
     display: inline-block;
@@ -1384,8 +1388,10 @@ a.reviews__all{
 .applications__item>h2{
     display: inline-block;
     text-align: left;
-    width: 365px;
+    width: 400px;
     margin-bottom: 19px;
+    left: 33px;
+    position: relative;
 }
 .applications__item:after{
     content: '';
@@ -1522,6 +1528,55 @@ a.reviews__all{
     height: 14px;
     margin-top: -6px;
     left: 13px;
+}
+.applications__item:last-child fieldset:last-child >div{
+    margin-bottom: 30px;
+}
+.applications__item fieldset>div > .checkbox-select{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 30px;
+    margin-left: 2px;
+}
+.applications__item fieldset>div > .checkbox-select input{
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+}
+.applications__item fieldset>div .checkbox-select:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    background: #e24200;
+    height: 10px;
+    border-radius: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    z-index: 2;
+    left: 4px;
+    top: 4px;
+}
+.applications__item fieldset>div .checkbox-select >div{
+    display: inline-block;
+}
+.applications__item fieldset>div .checkbox-select.active:after {
+    opacity: 1;
+}
+.applications__item fieldset> .cheack-section >div{
+   cursor: pointer;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.applications__item fieldset>div .checkbox-select-label{
+    margin-right: 7px;
+}
+.applications__item fieldset> .cheack-section{
+    margin-bottom: 14px;
 }
 /* --------------- /aplications --------------- */
 

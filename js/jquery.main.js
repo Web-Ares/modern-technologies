@@ -13,6 +13,34 @@ $(function(){
 
     });
 
+    $(".applications__item fieldset>div .checkbox-select").click(function(event){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $(this).find("input").attr('checked',false);
+        }else{
+            $(this).addClass('active');
+            $(this).find("input").attr('checked',true);
+        }
+        event.stopPropagation();
+        event.cancelBubble = true;
+
+        return false;
+    });
+
+    $(".applications__item fieldset>div .checkbox-select-label").click(function(event){
+        if($(this).prev().hasClass('active')){
+            $(this).prev().removeClass('active');
+            $(this).prev().find("input").attr('checked',false);
+        }else{
+            $(this).prev().addClass('active');
+            $(this).prev().find("input").attr('checked',true);
+        }
+        event.stopPropagation();
+        event.cancelBubble = true;
+
+        return false;
+    });
+
     $('select').each(function () {
         NiceSelect($(this));
     });
