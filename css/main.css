@@ -219,7 +219,6 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     vertical-align: top;
     width: 68%;
-    height: 400px;
 }
 .site__title{
     position: relative;
@@ -859,6 +858,7 @@ a.btn_buy{
 }
 .site__content-wrap .news-navigation-btn{
     position: relative;
+    display: inline-block;
     text-decoration: none;
     font-size: 14px;
     color: #000;
@@ -866,7 +866,7 @@ a.btn_buy{
     background: #e3e3e3;
     border-radius: 5px;
     text-align: left;
-    word-spacing: -9px;
+    width: 143px;
 }
 
 .site__content-wrap .news-navigation-btn:before{
