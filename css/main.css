@@ -663,6 +663,7 @@ a.btn_buy{
     color: #000;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
+    text-decoration: none;
 }
 .site__content-wrap .news:hover:before{
     opacity: 1;
