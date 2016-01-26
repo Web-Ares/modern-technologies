@@ -13,8 +13,32 @@ $(function(){
 
     });
 
+    $('select').each(function () {
+        NiceSelect($(this));
+    });
 } );
+var NiceSelect = function (obj) {
+    //private properties
+    var _self = this,
+        _obj = obj;
 
+    //private methods
+    var _addEvents = function () {
+            _obj.selectmenu()
+                .selectmenu( "menuWidget" )
+                .addClass( "overflow" );
+        },
+        _init = function () {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+
+    _init();
+};
 var Slider = function (obj) {
 
     //private properties
