@@ -6,6 +6,12 @@ $(function(){
     $.each($('.tabs'), function () {
         new Tabs( $( this ) );
     });
+    $('.btn-up').on({
+        'click':function(){
+            $('html, body').animate({scrollTop: 0}, 600);
+        }
+
+    });
 
 } );
 

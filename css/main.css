@@ -921,7 +921,7 @@ a.btn_buy{
 .site__header-search form input {
     width: 100%;
     height: 18px;
-    color: #fff;
+    color: #000;
     padding-left: 5px;
     padding-right: 25px;
 }
@@ -935,9 +935,9 @@ a.btn_buy{
 }
 .slider__layout {
     position: relative;
-    background-position: center;
+    background-color: #f6f6f6;
+    background-position: 82% 0;
     background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 360px;
     margin: 0 auto;
@@ -958,7 +958,7 @@ a.btn_buy{
     width: 300px;
     height: 360px;
     left: 50%;
-    margin-left: -410px;
+    margin-left: -41%;
     z-index: 4;
     color: #221f1f;
 }
@@ -1185,6 +1185,7 @@ a.reviews__all{
 .tabs {
     display: block;
     position: relative;
+    height: 292px;
     text-align: left;
 }
 .tabs__controls-wrap div {
@@ -1221,8 +1222,6 @@ a.reviews__all{
     user-select: none;
 }
 .tabs__wrapper {
-    max-width: 1226px;
-    margin: 0 auto;
 }
 .news-articles{
     margin-bottom: 30px;
@@ -1278,32 +1277,39 @@ a.reviews__all{
 /* --------------- /news-articles --------------- */
 
 @media (min-width: 1600px) {
+
+    /* --------------- site --------------- */
     .site {
-        max-width: 1690px;
         padding: 0 45px;
     }
+    .site__content{
+        max-width: 1580px;
+        margin: 0 auto 10px;
+    }
     .site__content-wrap {
-        width: 79%;
+        width: 80%;
     }
     .site__footer-layout {
-        max-width: 1600px;
+        max-width: 1580px;
     }
     .site__header {
-        max-width: 1600px;
+        max-width: 1580px;
+        padding-top: 25px;
     }
     .site__header-feedback {
-        top: 59px;
+        top: 68px;
         right: 190px;
     }
     .site__header-search {
-        top: 56px;
+        top: 66px;
         right: 0;
     }
     .site__header-enter {
-        top: 23px;
+        top: 27px;
     }
     .site__header-address {
-        width: 500px;
+        width: 637px;
+        padding-right: 100px;
     }
     .site__header-address span {
         display: inline-block;
@@ -1311,8 +1317,69 @@ a.reviews__all{
     .site__footer-developer {
         right: 120px;
     }
+    .site__content-wrap ul {
+        margin-bottom: 58px;
+    }
+    .site__aside-services ul li, .site__aside-services-online ul li {
+        margin-bottom: 4px;
+    }
+    .site__aside {
+        padding-bottom: 14px;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- btn-up --------------- */
     .btn-up {
         position: absolute;
         display: block;
     }
+    /* --------------- /btn-up --------------- */
+
+    /* --------------- slider --------------- */
+    .slider__ban,
+    .ban__item {
+        width: 700px;
+    }
+    .slider__ban {
+        margin-left: -37%;
+    }
+    .ban__item h2 {
+        margin-bottom: 59px;
+    }
+    .slider__next{
+        right: 46px;
+    }
+    .slider__prev {
+        left: 46px;
+    }
+    .slider {
+        margin: 0 auto -9px;
+    }
+    /* ---------------/slider --------------- */
+
+    /* --------------- why-we --------------- */
+    .why-we:before {
+        display: none;
+    }
+    .why-we ul li div {
+        margin: 0 auto 30px;
+    }
+    .why-we ul li span {
+        margin-left: 40px;
+    }
+    .news-articles__show ul li:last-child{
+        width: 28%;
+    }
+    /* --------------- /why-we --------------- */
+    .tabs {
+        height: 220px;
+    }
+    /* --------------- reviews --------------- */
+    .reviews__wrap {
+        margin-bottom: 18px;
+    }
+    .reviews__layout {
+        padding: 22px 87px;
+    }
+    /* --------------- /reviews --------------- */
 }
