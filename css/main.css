@@ -219,7 +219,6 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     vertical-align: top;
     width: 68%;
-    height: 400px;
 }
 .site__title{
     position: relative;
