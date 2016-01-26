@@ -444,6 +444,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 16px;
     line-height: 24px;
     text-decoration: underline;
+    transition: color .3s ease;
 }
 .site__aside-services ul li a:hover,
 .site__aside-services-online ul li a:hover{
@@ -462,10 +463,19 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 2px solid #fff;
     box-shadow: 2px 2px 3px #efefee;
     margin-right: 10px;
+    transition: background .3s ease;
 }
 .site__aside-services ul li,
-.site__aside-services-online ul li{
-    margin-bottom: 3px;
+ .site__aside-services-online ul li{
+     margin-bottom: 3px;
+ }
+.site__aside-services ul li:hover span,
+.site__aside-services-online ul li:hover span{
+    background-color: #e24200;
+}
+.site__aside-services ul li:hover a,
+.site__aside-services-online ul li:hover a{
+    color: #e24200;
 }
 .site__aside-ad-unit{
     display: inline-block;
@@ -531,10 +541,10 @@ a.btn_buy{
 .header__menu{
     position: absolute;
     display: block;
-    bottom: -3px;
+    bottom: -13px;
     margin: 0 auto;
     width: 100%;
-    padding-top: 23px;
+    padding-top: 19px;
     text-align: justify;
 }
 .header__menu:after{
@@ -548,10 +558,14 @@ a.btn_buy{
     vertical-align: top;
     font-size: 18px;
     color: #221f1f;
+    border-radius: 3px;
+    padding: 10px 20px;
     text-decoration: underline;
 }
 .header__menu a:hover{
     text-decoration: none;
+    color: #fff;
+    background-color: #e24200;
 }
 .header__menu:before{
     content: "";
