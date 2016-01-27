@@ -699,6 +699,11 @@ a.btn_buy{
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
+.news-wrap:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
 .news:nth-child(odd){
     margin-right: 13px;
 }
@@ -805,9 +810,31 @@ a.btn_buy{
 .single-news img{
     width: 338px;
     height: 338px;
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 18px;
+    vertical-align: top;
 }
 .single-news>div{
-
+    position: relative;
+    vertical-align: top;
+    top: -2px;
+}
+.single-news time{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.single-news p{
+    margin-right: 20px;
+    max-width: 703px;
+}
+.single-news .news-title{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    width: 100%;
+    line-height: 30px;
 }
 .news-current-tags{
     position: relative;
