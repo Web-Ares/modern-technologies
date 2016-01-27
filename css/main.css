@@ -1383,7 +1383,9 @@ a.reviews__all{
     margin-left: 0;
     width: 38px;
 }
-
+.applications__item .applications__item-org{
+    margin-left: 0;
+}
 .applications__item .applications__item-year{
     width: 67px;
 }
@@ -1676,6 +1678,9 @@ a.reviews__all{
     height: 16px;
     background-color: #0096a7;
     border-radius: 12px;
+}
+.step-indicator > .done:before{
+    background-color: #e24200;
 }
 /* --------------- /step-indicator --------------- */
 @media (min-width: 1600px) {
