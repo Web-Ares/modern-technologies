@@ -32,7 +32,6 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
 
-
 /* --------------- site --------------- */
 .site {
     position: relative;
@@ -1197,6 +1196,9 @@ a.reviews__all{
     text-align: left;
     padding: 0 10px;
     margin: 0;
+}
+.site__content-wrap  .why-we ul li:before{
+    display: none;
 }
 .why-we ul li div{
     width: 120px;
