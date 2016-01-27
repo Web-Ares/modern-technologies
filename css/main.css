@@ -1655,9 +1655,8 @@ a.reviews__all{
     display: block;
     text-align: justify;
     width: 680px;
-    margin-left: 23px;
     font-size: 14px;
-    margin-bottom: 53px;
+    margin: 0 auto 53px;
 }
 .step-indicator:after{
     content: '';
