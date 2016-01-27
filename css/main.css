@@ -1422,6 +1422,11 @@ a.reviews__all{
     text-align: left;
     vertical-align: middle;
     margin-left: 7px;
+    -webkit-transition: border 300ms ease-in-out;
+    transition: border 300ms ease-in-out;
+}
+.applications__item .ui-state-hover, .applications__item .ui-corner-top{
+    border: 1px solid #e24200;
 }
 .applications__item .ui-selectmenu-button .ui-icon {
     position: absolute;
@@ -1437,6 +1442,13 @@ a.reviews__all{
     padding: 0 20px 0 9px;
     cursor: pointer;
     font-family: 'PT Sans', sans-serif;
+    background: #f6f5f5;
+    -webkit-transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+.ui-selectmenu-menu .ui-state-focus{
+    background: #0096a7;
+    color: #fff;
 }
 .ui-selectmenu-menu {
     display: none;
@@ -1463,6 +1475,11 @@ a.reviews__all{
     border-top-color: #dadada;
     border-width: 5px;
     margin-top: 0;
+    -webkit-transition: border 300ms ease-in-out;
+    transition: border 300ms ease-in-out;
+}
+.applications__item  .ui-state-hover .ui-icon:after, .applications__item  .ui-corner-top .ui-icon:after{
+    border-top-color: #e24200;
 }
 .applications__item .ui-selectmenu-text {
     position: relative;
@@ -1485,6 +1502,11 @@ a.reviews__all{
     width: 310px;
     margin-left: 0;
     margin-right: 10px;
+}
+.applications__item .applications__doc{
+    border: none;
+    padding-left: 0;
+    height: auto;
 }
 .applications__item:last-child:after {
     content: '';
@@ -1589,6 +1611,8 @@ a.reviews__all{
 }
 .applications__item fieldset>div .checkbox-select-label{
     margin-right: 7px;
+    max-width: 270px;
+    vertical-align: top;
 }
 .applications__item fieldset> .cheack-section{
     margin-bottom: 14px;
