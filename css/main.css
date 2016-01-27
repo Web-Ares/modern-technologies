@@ -1735,6 +1735,57 @@ a.reviews__all{
     background-color: #e24200;
 }
 /* --------------- /step-indicator --------------- */
+
+/* --------------- contact-info --------------- */
+.site__content-wrap .contact-info{
+    width: 680px;
+    margin: 13px auto 23px;
+    text-align: left;
+}
+.site__content-wrap .contact-info li{
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    vertical-align: top;
+    padding-left: 69px;
+    margin-bottom: 60px;
+}
+.site__content-wrap .contact-info li div{
+    display: inline-block;
+    font-size: 14px;
+}
+.site__content-wrap .contact-info li div span{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.site__content-wrap .contact-info li:before{
+    height: 50px;
+    width: 50px;
+    background: url("../img/contact-info-1.png");
+    left: 0;
+    top: 50%;
+    margin-top: -22px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.site__content-wrap .contact-info li:nth-child(odd){
+    margin-right: 21px;
+}
+.site__content-wrap .contact-info .contact-info-item-1:before{
+     background: url("../img/contact-info-2.png");
+     background-repeat: no-repeat;
+ }
+.site__content-wrap .contact-info .contact-info-item-2:before{
+    background: url("../img/contact-info-3.png");
+    background-repeat: no-repeat;
+}
+.site__content-wrap .contact-info .contact-info-item-3:before{
+    background: url("../img/contact-info-4.png");
+    background-repeat: no-repeat;
+}
+/* --------------- /contact-info --------------- */
+
 @media (min-width: 1600px) {
 
     /* --------------- site --------------- */
