@@ -52,7 +52,7 @@ $(function(){
     function init () {
         myMap = new ymaps.Map('map', {
             center: $('.map__item').eq(0).attr('data-coord').split(', '),
-            zoom: 12
+            zoom: 14
         });
         myMap.controls
             .add('zoomControl', { left: 5, bottom: 5 })
