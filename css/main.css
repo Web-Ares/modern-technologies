@@ -1326,6 +1326,11 @@ a.reviews__all{
 .aplications{
     position: relative;
     padding-top: 38px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.aplications-wrap{
     width: 678px;
     margin: 0 auto;
 }
@@ -1544,8 +1549,9 @@ a.reviews__all{
 .applications-controll{
     position: relative;
     display: block;
-    margin-left: 241px;
-    margin-bottom: 37px;
+    width: 678px;
+    margin: 0 auto 37px;
+    padding-left: 241px;
 }
 .applications-controll-next{
     margin-bottom: 31px;
@@ -1998,4 +2004,14 @@ a.btn_contact-send:before {
         padding: 22px 87px;
     }
     /* --------------- /reviews --------------- */
+    .applications__item:after {
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        width: auto;
+        left: -9999px;
+        right: -9999px;
+        background-color: #fff;
+        border-bottom: 1px dotted #000000;
+    }
 }
