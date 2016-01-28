@@ -27,6 +27,18 @@
 .placeholder {
     color: #c7c7c7;
 }
+.contact-us ::-webkit-input-placeholder {
+    color: #000;
+    font-size: 13px;
+}
+.contact-us :-moz-placeholder {
+    color: #000;
+    font-size: 13px;
+}
+.contact-us .placeholder {
+    color: #000;
+    font-size: 13px;
+}
 /* --------------- /placeholder --------------- */
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -35,7 +47,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-width: 1153px;
+    min-width: 1088px;
     margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
@@ -559,7 +571,7 @@ a.btn_buy{
     font-size: 18px;
     color: #221f1f;
     border-radius: 3px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-decoration: underline;
 }
 .header__menu a:hover{
@@ -1744,8 +1756,8 @@ a.reviews__all{
 
 /* --------------- contact-info --------------- */
 .site__content-wrap .contact-info{
-    width: 680px;
-    margin: 13px auto 23px;
+    width: 678px;
+    margin: 7px auto 0px;
     text-align: left;
 }
 .site__content-wrap .contact-info li{
@@ -1795,11 +1807,22 @@ a.reviews__all{
 /* --------------- contact-us --------------- */
 .contact-us {
     position: relative;
-    width: 677px;
+    width: 100%;
     border-radius: 3px;
     border: 1px solid #f2f2f2;
     padding: 26px 30px 68px 30px;
     box-shadow: 0 0 5px #f2f2f2;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.contact-us div{
+    display: inline-block;
+    vertical-align: top;
+    width: 55.5%;
+}
+.contact-us div:first-child{
+    width: 39.5%;
+    margin-right: 4%;
 }
 .contact-us fieldset {
 
@@ -1807,7 +1830,7 @@ a.reviews__all{
 .contact-us fieldset input[type='text'],
 .contact-us fieldset input[type='email'],
 .contact-us fieldset textarea {
-    width: 245px;
+    width: 100%;
     height: 27px;
     border-radius: 3px;
     border: 1px solid #f2f2f2;
@@ -1819,7 +1842,7 @@ a.reviews__all{
 
 }
 .contact-us fieldset textarea {
-    width: 345px;
+    width: 100%;
     height: 230px;
     padding: 7px 0 0 10px;
 }
@@ -1830,11 +1853,7 @@ a.reviews__all{
     margin-bottom: 8px;
 }
 .contact-us .massage{
-    position: absolute;
-    top: 26px;
-    right: 27px;
-    display: inline-block;
-    vertical-align: top;
+
 }
 a.btn_contact-clear,
 a.btn_contact-send{
@@ -1889,7 +1908,7 @@ a.btn_contact-send:before {
     margin: 0 auto;
     width: 100%;
     height: 452px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 }
 .map__item{
     display: none;

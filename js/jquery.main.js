@@ -45,6 +45,8 @@ $(function(){
         NiceSelect($(this));
     });
 
+    $.each($('.map'), function () {
+
     var myMap;
 
     function init () {
@@ -73,10 +75,13 @@ $(function(){
             }
         });
     }
-
     ymaps.ready(init);
 
-} );
+    });
+
+});
+
+
 var NiceSelect = function (obj) {
     //private properties
     var _self = this,
@@ -99,6 +104,7 @@ var NiceSelect = function (obj) {
 
     _init();
 };
+
 var Slider = function (obj) {
 
     //private properties
