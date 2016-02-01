@@ -682,7 +682,7 @@ a.btn_buy{
 .site__content-wrap .news{
     position: relative;
     display: inline-block;
-    width: 330px;
+    width: 48%;
     vertical-align: top;
     font-size: 14px;
     margin-bottom: 21px;
@@ -729,7 +729,7 @@ a.btn_buy{
 .news>div{
     position: relative;
     display: inline-block;
-    width: 200px;
+    width: 60%;
     vertical-align: top;
     z-index: 3;
 }
@@ -838,7 +838,7 @@ a.btn_buy{
 }
 .single-news p{
     margin-right: 20px;
-    max-width: 703px;
+    /*max-width: 703px;*/
 }
 .single-news .news-title{
     font-size: 24px;
@@ -1376,7 +1376,7 @@ a.reviews__all{
     font-size: 14px;
 }
 
-.applications__item .cheackbox-field{
+.applications__item .cheackbox-field, .applications__item .radio-field{
     margin-bottom: 20px;
 }
 .applications__item input{
@@ -1616,7 +1616,7 @@ a.reviews__all{
 .applications__item:last-child fieldset:last-child >.birth-section{
     margin-bottom: 30px;
 }
-.applications__item fieldset>div > .checkbox-select{
+.applications__item fieldset>div > .checkbox-select, .applications__item fieldset>div > .radio-select{
     position: relative;
     display: inline-block;
     width: 20px;
@@ -1625,13 +1625,13 @@ a.reviews__all{
     border-radius: 30px;
     margin-left: 2px;
 }
-.applications__item fieldset>div > .checkbox-select input{
+.applications__item fieldset>div > .checkbox-select input, .applications__item fieldset>div > .radio-select input{
     width: 20px;
     height: 20px;
     opacity: 0;
     clip: rect(0, 0, 0, 0);
 }
-.applications__item fieldset>div .checkbox-select:after {
+.applications__item fieldset>div .checkbox-select:after, .applications__item fieldset>div .radio-select:after {
     content: "";
     position: absolute;
     width: 10px;
@@ -1648,20 +1648,21 @@ a.reviews__all{
 .applications__item fieldset>div .checkbox-select >div{
     display: inline-block;
 }
-.applications__item fieldset>div .checkbox-select.active:after {
+.applications__item fieldset>div .checkbox-select.active:after, .applications__item fieldset>div .radio-select.active:after {
     opacity: 1;
 }
-.applications__item fieldset> .cheack-section >div{
+.applications__item fieldset> .cheack-section >div, .applications__item fieldset> .radio-section >div{
    cursor: pointer;
     margin-right: 3px;
     vertical-align: middle;
 }
-.applications__item fieldset>div .checkbox-select-label{
+.applications__item fieldset>div .checkbox-select-label, .applications__item fieldset>div .radio-select-label{
     margin-right: 7px;
     max-width: 270px;
     vertical-align: top;
 }
-.applications__item fieldset> .cheack-section{
+
+.applications__item fieldset> .cheack-section, .applications__item fieldset> .radio-section{
     margin-bottom: 14px;
 }
 /* --------------- /aplications --------------- */
