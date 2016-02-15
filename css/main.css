@@ -47,13 +47,13 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- site --------------- */
 .site {
     position: relative;
-    min-width: 1088px;
+    min-width: 1024px;
     margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
     z-index: 1;
     font-family: 'PT Sans', sans-serif;
-    padding: 0 45px;
+    padding: 0 20px;
 }
 .site:after {
     content: '';
@@ -229,7 +229,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__content-wrap{
     display: inline-block;
     vertical-align: top;
-    width: 68%;
+    width: 67%;
 }
 .site__title{
     position: relative;
@@ -1203,7 +1203,7 @@ a.reviews__all{
 .why-we ul li{
     display: inline-block;
     vertical-align: top;
-    width: 24.5%;
+    width: 24.3%;
     text-align: left;
     padding: 0 10px;
     margin: 0;
@@ -1921,14 +1921,14 @@ a.btn_contact-send:before {
 
     /* --------------- site --------------- */
     .site {
-        padding: 0 45px;
+        padding: 0 20px;
     }
     .site__content{
         max-width: 1580px;
         margin: 0 auto 10px;
     }
     .site__content-wrap {
-        width: 80%;
+        width: 78%;
     }
     .site__footer-layout {
         max-width: 1580px;
